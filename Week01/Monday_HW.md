@@ -19,7 +19,7 @@ _I might suggest making a drawing by hand first and translating that image to co
 * Also, experiment with color, stroke weight, and fills.
 * When you are done, 'comment' your first and last name at the top of you Processing file. (ie. //FirstName LastName)
 * Save your file as the title of your composition.
-* **[Email](chester.dols@gmial.com) me your .pde file** If you are unsure about this, you can also copy and paste me your raw code.
+* **Email me your .pde file** If you are unsure about this, you can also copy and paste me your raw code.
 
 _Have your work done and sent to me before the start of Wednesday's class.  We will discuss and review compositions and any issues we might have run in to._
 
