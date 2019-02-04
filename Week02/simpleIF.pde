@@ -8,8 +8,7 @@ void setup(){
 void draw() {
   
   background(0,0,0);
-  
-  Simple mousePressed 
+ 
   if (mousePressed){
     fill(255,255,255);
     ellipse(300,300,100,100);
