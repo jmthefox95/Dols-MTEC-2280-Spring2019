@@ -9,9 +9,6 @@ void draw() {
   
   background(0,0,0);
   
-  fill(value);
-  rect(25, 25, 50, 50);
-  
   Simple mousePressed 
   if (mousePressed){
     fill(255,255,255);
