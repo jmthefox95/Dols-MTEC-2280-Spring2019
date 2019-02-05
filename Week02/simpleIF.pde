@@ -14,7 +14,7 @@ void draw() {
     ellipse(300,300,100,100);
   }
   
-  //  if (mousePressed){  // ellipse fill changes depending on if  you click at the top or bottom of the canvas..
+  //  if (mousePressed){  // ellipse color changes depending on if  you click at the top or bottom of the canvas..
   //    if (mouseY>300){
   //      fill(255,255,255);
   //    }else if (mouseY<300){
