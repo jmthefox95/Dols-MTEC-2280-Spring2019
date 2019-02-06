@@ -1,3 +1,5 @@
+//julian Frost
+
 boolean growboolean = true;  // boolean starts as true to grow
 int growRate = 1;
 int diameter = 0;
