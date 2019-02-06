@@ -34,12 +34,13 @@ line (10, 200, 790, 200);
 //line (10, 300, 790, 300);
 
 
-////Rectangle with stoke and stoke color
+////Rectangle with stokeweight and stoke color RGB 
+//Rectangles are drawn with an (x,y) coordnate and 2 values for length and width.
 //strokeWeight(2);
 //stroke(0,0,0); //color rgb
 //rect(30,530,100,100);
 
-////Rectangle with no stoke and fill color
+////Rectangle with no stoke but with fill color
 //noStroke();
 //fill(10,0,0); // color rgb
 //rect(150,530,100,100);
@@ -49,17 +50,17 @@ line (10, 200, 790, 200);
 //fill(10,100,100,25); // color rgb
 //rect(300,530,100,100);
 
-//Same rectangle copied 3 times with overlap alpha channel
+//Same rectangle copied 3 times with overlap alpha channel RGBA
 //rect(450,530,100,100);
 //rect(475,530,100,100);
 //rect(450,480,100,100);
 
-////ellipse
+////ellipse which is drawn with a (x,y) coordinate center point and 2 values for the radii.
 //fill(200,200,0,25); // color rgb
 //ellipse(400, 300, 200, 200);
 //ellipse(400, 300, 300, 300);
 //ellipse(400, 300, 400, 400);
 
-//quad
+//quad which uses 4 destinct (x,y) coordinates
 //quad(200, 200, 400, 200, 400, 300, 200, 300);
 //quad(200, 100, 400, 200, 400, 400, 200, 300);

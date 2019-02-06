@@ -1,0 +1,21 @@
+int RoundSize = 50;
+float  move= 10.5;
+
+
+
+void setup() {
+  size (800,800);
+  background(255,0,0);
+}
+
+void draw() {
+  stroke(100);
+  
+  ellipse (300 + move,100 , RoundSize, RoundSize);
+  ellipse (500 - move,100 , RoundSize, RoundSize);
+  ellipse (300 + move,200 , RoundSize, RoundSize);
+  ellipse (500 - move,200 , RoundSize, RoundSize);
+  
+  move= move+0.2;
+  
+}
