@@ -1,0 +1,37 @@
+//Week 2 drawing#2 Anthony.Truong
+// thanks to processing.org for ideas and creativity
+
+
+
+float growth = 0.2;
+float rate = 1; // speed of growth
+
+void setup(){
+  size(600,600);
+   background(66,134,244);
+   background(100,134,244);
+   
+  
+}
+
+void draw() {
+  
+  //background(0,0,0);
+  fill(255,255,255,10); // Fun Halo effects
+  ellipse(300,300,growth+100,growth+100);
+  rect(500,500,growth+100,growth+100);
+  ellipse(200,200,growth+100,growth+100);
+  rect(400,400,growth+100,growth+100);
+  rect(100, 100, growth +100, growth+100);
+  ellipse(150, 150, growth+100, growth+100);
+  stroke(random(255), random(255), random(255));
+  ////Simple mousePressed 
+  if (mousePressed){
+    rate = -2;
+  }else{             //Try removing this else statement
+    rate = 2;
+  }
+  
+  growth = growth + rate;
+}
+
