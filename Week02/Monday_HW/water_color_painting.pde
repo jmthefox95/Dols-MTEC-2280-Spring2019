@@ -1,3 +1,5 @@
+//julian frost
+
 float radius = 0;
 float colorVal= 255;
 float colorVal2= 255;
