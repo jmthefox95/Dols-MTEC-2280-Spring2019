@@ -13,9 +13,11 @@ Due Monday February 4th.
 
 Using Proecessing, make 2 unique drawing tools.  Use the class demos as an example and explore the use of: 
 * variables
+* varialbes that change over time!
+* Setup and Draw
 * mousex, mousey
 * pmousex, pmousey
-* setup and draw functions.  
+* Animation!!!
 
 Consider interaction. Is there a way to program some playful and unexpected results?
 
