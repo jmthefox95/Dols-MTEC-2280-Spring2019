@@ -1,0 +1,31 @@
+//Aryan Zamanzadeh
+
+void setup() {
+  size (900, 500);
+  background (255, 255, 255);
+}
+
+void draw() {
+  
+int value = 0;
+  
+if(mousePressed == true) { value = 1; }
+else {value = 0; }
+    
+if(value == 0){
+  background (255, 255, 255);
+  stroke(255, 64, 26);
+  strokeWeight(10);
+  line(mouseX, mouseY, pmouseX, pmouseY);
+  } 
+else {
+  stroke(26, 255, 186);
+  strokeWeight(20);
+  line(mouseX, mouseY, pmouseX, pmouseY);
+  stroke(255, 64, 26);
+  strokeWeight(10);
+  line(mouseX, mouseY, pmouseX, pmouseY);
+  }
+
+}
+
