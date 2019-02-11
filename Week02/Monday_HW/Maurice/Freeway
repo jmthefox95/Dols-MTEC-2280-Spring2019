@@ -149,16 +149,13 @@ line(0, 530, 1000, 530);
    speed = -5;
  }
  
+// if (moveboolean == true) {
+//speed = 5;
  
- if (moveboolean == true) {
-speed = 5;
- 
- }
- 
- 
- {
+// }
+  
  t = t + speed;
- }
+ 
  
  ///////////////////////////////////////////////////
  

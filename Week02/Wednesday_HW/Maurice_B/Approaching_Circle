@@ -1,0 +1,102 @@
+//Maurice_Burt
+
+
+
+float r=0;
+float g=0;
+float b=0;
+float growth = 0.1;
+float growth1 = 0.1;
+float growth2 = 0.1;
+float growth3 = 0.1;
+float growth4 = 0.1;
+float growth5 = 0.1;
+float rate = 1;// speed of growth
+float rate1 = 1;
+float rate2 = 1;
+float rate3 = 1;
+float rate4 = 1;
+float rate5 = 1;
+
+void setup() {
+ size(400, 400);
+ background(255, 0, 0);
+}
+
+void draw() {
+
+ //background(0,0,0);
+ //fill(255,255,255,10); // Fun Halo effects
+ noStroke();
+ fill (14, 218, 67);  ///green////
+ ellipse(200, 200, growth+100, growth+100);
+
+ ////Simple mousePressed
+ if (mousePressed) {
+   rate = -1;
+ } else {             //Try removing this else statement
+   rate = 1;
+ }
+ growth = growth + rate;
+ ///////////////////////////////////////////////////////
+ fill (253, 247, 21); ///yellow////
+ ellipse(200, 200, growth1+95, growth1 + 95);
+
+ if (mousePressed) {
+   rate1 = -0.9;
+ } else {
+   rate1 = 0.9;
+ }
+ growth1 = growth1 + rate1;
+ //////////////////////////////////////////////////////
+
+ fill (14, 218, 67);
+ ellipse(200, 200, growth2 + 90, growth2 + 90);
+
+ if (mousePressed) {
+   rate2 = -0.8;
+ } else {
+   rate2 = 0.8;
+ }
+ growth2 = growth2 + rate2;
+ //////////////////////////////////////////////////
+
+ fill (253, 247, 21);
+ ellipse(200, 200, growth3 + 80, growth3 + 80);
+
+ if (mousePressed) {
+   rate3 = -0.7;
+ } else {
+   rate3 = 0.7;
+ }
+ growth3 = growth3 + rate3;
+ //////////////////////////////////////////////////////
+
+ fill (r, g, b);
+ ellipse(200, 200, growth4 + 70, growth4 + 70);
+
+ if (mousePressed) {
+   rate4 = -0.6;
+ } else {
+   rate4 = 0.6;
+ }
+ growth4 = growth4 + rate4;
+
+
+ r = growth4;
+ g= rate4;
+ b= rate3;
+ ////////////////////////////////////////////////////////
+ 
+ fill (255,255,255);
+ ellipse (200,200, growth5 + 60, growth5 + 60);
+ 
+ if(mousePressed){
+   rate5 = -0.6;
+ }
+ else {
+ rate5 = 0.6;
+ }
+ //growth5 = growth5 + rate5;
+ 
+}
