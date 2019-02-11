@@ -1,0 +1,59 @@
+int s = 200;
+float c=300;
+int x=0;
+int y=0;
+int a=300;
+int b=300;
+boolean bigger = true;
+
+
+
+void setup() {
+
+  size(600, 600);
+ for (int x = 0; x <600; x= x+s) {
+    for (int y = 0; y <600; y=y+s) {
+      rect(x, y, s, s);
+         }
+  }
+   
+ 
+}
+
+
+
+
+
+void draw() {
+
+  for (int x = 0; x <600; x= x+s) {
+    for (int y = 0; y <600; y=y+s) {
+      rect(x, y, s, s);
+       stroke(0);
+  strokeWeight(10);
+
+ 
+  ellipseMode(CENTER);
+  ellipse(a, b, c, c);
+  
+         }
+  }
+  
+  c=c-0.5;
+ 
+
+
+  if (mouseX<a+c && mouseX>a && mouseY<b+c && mouseY >b) {
+
+    bigger=true;
+  } else {
+
+    bigger =false;
+  }
+
+  if (bigger) {
+
+    c=c+100;
+
+  }
+}
