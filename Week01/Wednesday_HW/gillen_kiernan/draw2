@@ -1,0 +1,32 @@
+
+
+void setup() {
+size (800, 800);
+background (255,255,255);
+} 
+
+int a=0;
+int b=0;
+int c=0;
+int d=800;
+int e=800;
+int f=800;
+int g=0;
+void draw() {
+  stroke(a,b,c);
+  strokeWeight(10);
+  
+ if(a==255)
+   a=0;
+   b=0;
+   c=0;
+  b=b+1;
+  c=c+1;
+  d=d-1;
+  e=e-1;
+  f=f-1;
+  g=g+1;
+  a=a+1;
+ ellipse(d,e,500,500);
+  ellipse(f,g,500,500);
+}
