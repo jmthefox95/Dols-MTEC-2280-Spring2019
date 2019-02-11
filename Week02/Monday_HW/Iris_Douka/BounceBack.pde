@@ -7,6 +7,7 @@ float move4=10.5;
 float a=300;
 float b= 500;
 float c=100;
+int r = 10;
 
 //Create two blocks of code
 void setup() {
@@ -33,8 +34,8 @@ void draw() {
   ellipse (a + move4, c*4, RoundSize, RoundSize);
   ellipse (b - move4, c*4, RoundSize, RoundSize);
 
-  move= move+0.2;
-  move2=move2+0.4;
+  move= move + r;
+  move2=move2+ r;
   move3=move3+0.6;
   move4=move4+0.8;
   
@@ -52,6 +53,7 @@ if (a+move2 >=700) {
 }
 if (a+move >=700) {
   move=move*0;
+    //background(200, 20, 30);
 }
 
 }
