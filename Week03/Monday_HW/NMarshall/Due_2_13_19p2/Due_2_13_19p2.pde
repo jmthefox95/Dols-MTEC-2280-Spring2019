@@ -42,7 +42,7 @@ void draw() {
   
   pushMatrix();
   
-   translate(300, 300);
+   translate(300,300);
   fill(182, 38, 255, 150);
   
   int passedTime2 = millis() - savedTime2;
@@ -52,7 +52,7 @@ void draw() {
     savedTime2 = millis(); // Save the current time to restart the timer!
     }
   rotate(2*PI+(counter2*PI)/12);
-  rect(100, 0, 100, 10);
+  rect(-5, -200, 10, 100);
   
   fill(0, 0, 255, 30);
  
