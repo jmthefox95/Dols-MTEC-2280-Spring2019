@@ -1,0 +1,78 @@
+//Gillen Kiernan
+
+float c=0;
+float d=0;
+float e=0;
+float f=0;
+float g=0;
+float h=0;
+float i=0;
+float j=0;
+float k=0;
+float l=0;
+float m=0;
+float n=0;
+float o=0;
+float p=0;
+float q=0;
+float r=0;
+float x=510;
+float y=510;
+boolean grow=true;
+
+void setup(){
+  background(255,0,100);
+  size(1020,1020);
+}
+
+void draw(){ 
+float a= mouseX;
+float b= mouseY;
+
+  fill(y,x,e);
+if (mousePressed==true)
+  ellipse(510-200,510-200,x/8,y/8);
+if (mousePressed==true)
+  ellipse(510+200,510-200,x/8,y/8);
+translate(510,510);
+if (mousePressed==true)
+  ellipse(e,f+100,x/10,y/10);
+    e=350*sin(g);
+    f=0*sin(h);
+  g= .01+g;
+  h= .01+h;
+if(mousePressed==true)
+  ellipse(-x,y,10,10);
+if(mousePressed==true)
+  ellipse(x,y,10,10);
+if(mousePressed==true)
+  ellipse(-x,-y,10,10);
+if(mousePressed==true)
+  ellipse(x,-y,10,10);
+    x=510*cos(c);   
+    y=510*sin(d);
+  c= 0.10 + c;
+  d= .1+d;
+translate(-200,-200); 
+ellipse(-j,-k,m,n);
+translate(400,0); 
+ellipse(j,k,m,n);
+
+
+  
+     j=50*cos(i);
+     k=50*sin(l);
+  l= .1+l;
+  i= .1+i;
+   m=m+.01;
+if(n>200)
+ n=n-1;
+
+if(grow==true) 
+  n=n+01;
+translate(-200,200);
+fill(x,y,e,5);
+ellipse(j,k,1020,1020);
+   o=50*cos(q);
+   p=50*sin(r);
+}

@@ -1,0 +1,108 @@
+//Gwendolyn F.
+/*
+  Press Left mouse button to raise ball
+  Press Right mouse button to lower ball
+*/
+
+//CURRENT ISSUE: AMBUSH() DOES NOT WORK
+
+int goalY;
+int ballY;
+int goalHeight;
+int bound = goalHeight/2;
+boolean inside;
+int score;
+int time = millis();
+
+void setup()
+{
+  size(800,800);
+  ellipseMode(CENTER);
+  score = 0;
+  ballY = height/2;
+  goalHeight = 100;
+  goalY = int(random(800-goalHeight));
+  
+}
+
+void draw()
+{
+  background(#e5c964);
+  goal();
+  ball();
+  if(time%1000 == 0)
+  {
+    while(time != time+5000)
+    {
+      ambush(-25,width+25);
+    }
+  }
+  score();
+}
+
+/*
+Create a zone that the ball has to enter in order
+to get a point
+When ball enter this zone, change the Y position
+and increase score
+*/
+void goal()
+{
+  noStroke();
+  fill(#4de822);
+  rect(0,goalY,width,goalHeight);
+  if(ballY > goalY && ballY < goalY+goalHeight )
+  {
+    goalY = int(random(800-goalHeight));
+    score++;
+  }
+}
+
+void ball()
+{
+  fill(60);
+  ellipse(width/2,ballY,70,70);
+  if(mouseButton == LEFT)
+  {
+    ballY += 5;
+  }
+  else if(mouseButton == RIGHT)
+  {
+    ballY -= 5;
+  }
+}
+
+void score()
+{
+  textSize(55);
+  fill(60);
+  text(score, width-80, 70);
+}
+
+void ambush(int rightX, int leftX)//create a bunch of bullets that come from the side
+{//This only last for a certain amount of time
+  for(int i = 0; i < 20; i++)
+  {
+    int rightxPos = rightX;
+    int leftxPos = leftX;
+    fill(#e84929);
+    ellipse(rightxPos, random(25,width-25), 50, 50);
+    ellipse(leftxPos, random(25,width-25), 50, 50);
+    if(rightX == -25)
+    {
+      while(rightxPos <= width+50)
+      {
+        rightxPos -= 9;
+      }
+    }
+    else if(leftX == width+25)
+    {
+      while(leftxPos >= -50)
+      {
+        leftxPos += 9;
+      }
+    }
+    rightxPos = rightX;
+    leftxPos = leftX;
+  }
+}
