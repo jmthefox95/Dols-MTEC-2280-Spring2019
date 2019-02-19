@@ -2,7 +2,7 @@
 
 Bitforms is a really fantastic art and technology gallery.  One of the more nuanced spaces which curates work similar to the what you are currently learning in your classes.
 
-**Please go on your own before the next class (Monday, Feb 18th).**
+**Please go on your own before the next class (Monday, Feb 25th).**
 
 Write a short response to what you saw there.  What did you see? How do you think it worked?  What questions did you have after seeing it?  Did it inspire you with new ideas for future work?  What ideas may those be?  This response should be at least 500 words in length.  
 
