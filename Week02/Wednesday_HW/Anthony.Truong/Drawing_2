@@ -1,0 +1,100 @@
+//Anthony.Truong drawing 2 week2
+//Thanks to idea from processing.org grwoth lessons
+//Space laser growth
+
+void setup() {
+
+
+size (450,300);
+}
+
+
+
+void draw() {
+
+
+background(0);
+
+
+stroke(100,100,100);
+fill(100,100,100);
+
+ellipseMode(CENTER);
+
+ellipse(375,150,90,50);
+
+stroke(0);
+fill(245,245,245);
+
+ellipseMode(CENTER);
+
+ellipse(375,130,65,60);
+fill(53,225,44);
+
+ellipseMode(CENTER);
+
+
+ellipse(350,161,10,10);
+fill(237,12,12);
+
+ellipseMode(CENTER);
+
+ellipse(350,161,9,9);
+fill(53,225,44);
+
+ellipseMode(CENTER);
+
+ellipse(340,150,10,10);
+fill(237,12,12);
+
+ellipseMode(CENTER);
+
+ellipse(381,167,9,9);
+fill(53,225,44);
+
+ellipseMode(CENTER);
+
+ellipse(395,162,10,10);
+fill(237,12,12);
+
+ellipseMode(CENTER);
+
+ellipse(407,153,10,10);
+fill(0,225,0);
+
+rectMode(CENTER);
+
+rect(375,147,5,10,25);
+
+ellipse(375,130,30,30);
+
+fill(0);
+
+ellipse(370,129,4,8);
+
+ellipse(381,129,4,8);
+
+line(370,150,364,155);
+
+line(380,150,386,155);
+
+line(mousex, 145,300,145);
+
+line(mousex, 146,300,146);
+
+line(mousex, 147, 300, 147);
+
+line(mousex, 160, 300, 160);
+
+line(mosuex, 161, 300, 161);
+
+line(mousex,162, 300, 162);
+stroke(100,100,100);
+
+fill(100,100,100);
+
+
+}
+
+
+
