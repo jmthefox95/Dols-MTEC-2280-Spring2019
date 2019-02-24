@@ -1,0 +1,238 @@
+//Maurice Burt
+
+float horizontalBlock;
+float horizontalBlock1;
+float horizontalBlock2;
+
+float verticalBlock;
+float verticalBlock1;
+float verticalBlock2;
+float verticalBlock3;
+
+boolean moveboolean = true;
+boolean moveboolean1 = true;
+boolean moveboolean2 = true;
+boolean moveboolean3 = true;
+boolean moveboolean4 = true;
+boolean moveboolean5 = true;
+boolean moveboolean6 = true;
+
+float speed;
+float speed1;
+float speed2;
+float speed3;
+float speed4;
+float speed5;
+float speed6;
+void setup(){
+size(800, 800);
+
+horizontalBlock = 0;
+horizontalBlock1 = 180;
+horizontalBlock2 = 360;
+
+verticalBlock = 0; 
+verticalBlock1 = 300;
+verticalBlock2 = 450;
+verticalBlock3 = 600;
+
+speed = 5;
+speed1 = 5;
+speed2 = 5;
+speed3 = 5;
+speed4 = 5;
+speed5 = 5;
+speed6 = 5;
+}
+
+void draw(){
+background(255,255,255);
+fill(0,0,0);
+///////horizontal squares///////////////////////////
+square(75, 250, 100);
+
+square (250, 250, 100);
+
+square (450, 250, 100);
+
+square (600, 250, 100);
+
+////////////////////////////////////////////////////
+
+//////vertical squares////////////////////////////
+square (350, 0, 100);
+
+square (350, 150, 100);
+
+square (350, 300, 100);
+
+square (350, 450, 100);
+
+square (350, 600, 100);
+
+square (350, 750, 100);
+
+///////////1st moving block/////////////////////////////////////////
+
+fill (255,0,0);
+square(horizontalBlock, 250, 100);
+
+if(moveboolean ==false){
+speed = -5;
+}
+
+if(moveboolean == true) {
+speed = 5;
+}
+
+horizontalBlock = horizontalBlock + speed;
+
+if(mousePressed){
+moveboolean = false;
+}
+else{
+moveboolean = true;
+}
+///////////////////////////////////////////////////////////
+
+////////2nd moving block////////////////////////////////
+fill (255,0,0);
+square(horizontalBlock1, 250, 100);
+
+if(moveboolean1 ==false){
+speed1 = -5;
+}
+
+if(moveboolean1 == true) {
+speed1 = 5;
+}
+
+horizontalBlock1 = horizontalBlock1+ speed1;
+
+if(mousePressed){
+moveboolean1 = false;
+}
+else{
+moveboolean1 = true;
+}
+
+////////////////////////////////////////////////////////////////////
+
+//////////3rd moving block //////////////////////////////////////////////////////////////
+
+fill (255,0,0);
+square(horizontalBlock2, 250, 100);
+
+if(moveboolean2 ==false){
+speed2 = -5;
+}
+
+if(moveboolean2 == true) {
+speed2 = 5;
+}
+
+horizontalBlock2 = horizontalBlock2+ speed2;
+
+if(mousePressed){
+moveboolean2 = false;
+}
+else{
+moveboolean2 = true;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////
+
+/////////////4th moving car///////////////////////////////////////////////////////////////////
+
+fill (255,0,0);
+square(350, verticalBlock, 100);
+
+if(moveboolean3 ==false){
+speed3 = -2;
+}
+
+if(moveboolean3 == true) {
+speed3 = 2;
+}
+
+verticalBlock = verticalBlock+ speed3;
+
+if(mousePressed){
+moveboolean3 = false;
+}
+else{
+moveboolean3 = true;
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//////////////////////5th moving car/////////////////////////////////////////////////////////////////////////////////
+
+fill (255,0,0);
+square(350, verticalBlock1, 100);
+
+if(moveboolean4 ==false){
+speed4 = -2;
+}
+
+if(moveboolean4 == true) {
+speed4 = 2;
+}
+
+verticalBlock1 = verticalBlock1+ speed4;
+
+if(mousePressed){
+moveboolean4 = false;
+}
+else{
+moveboolean4 = true;
+}
+///////////////////////////////////////////////////////////////////////
+
+/////////////6th moving car//////////////////////////////////////////
+
+fill (255,0,0);
+square(350, verticalBlock2, 100);
+
+if(moveboolean5 ==false){
+speed5 = -2;
+}
+
+if(moveboolean5 == true) {
+speed5 = 2;
+}
+
+verticalBlock2 = verticalBlock2+ speed4;
+
+if(mousePressed){
+moveboolean5 = false;
+}
+else{
+moveboolean5 = true;
+}
+///////////////////////////////////////////////////////////////////////
+
+////////////7th moving car/////////////////////////////////////////////
+
+
+fill (255,0,0);
+square(350, verticalBlock3, 100);
+
+if(moveboolean6 ==false){
+speed6 = -2;
+}
+
+if(moveboolean6 == true) {
+speed6 = 2;
+}
+
+verticalBlock3 = verticalBlock3 + speed4;
+
+if(mousePressed){
+moveboolean6 = false;
+}
+else{
+moveboolean6 = true;
+}
+//////////////////////////////////////////////
+}

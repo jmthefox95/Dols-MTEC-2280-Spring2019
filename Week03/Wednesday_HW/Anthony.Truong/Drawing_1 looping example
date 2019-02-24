@@ -1,0 +1,38 @@
+// Anthony.Truong drawing 1 loops week 3 hw
+//Thanks to processing examples for looping
+// grid example
+
+
+void setup() {
+  size(400, 400);
+  noStroke();
+}
+ 
+void draw() {
+  background(23, 100, 240);
+  float x = 0;
+  while (x < 10) {
+    float y = 0;
+    while (y < 10) {
+      // if column 4 AND row 4
+      if(x == 3 && y == 3) {
+        // random bright gray
+        fill(random(200, 255));
+        ellipse(15 + x * 40, 15 + y * 40, random(20,30), random(20, 30));        
+        
+        // almost transparent white
+        fill(255, 15);
+        ellipse(15 + x * 40, 15 + y * 40, 40, 40);
+        ellipse(15 + x * 40, 15 + y * 40, 50, 50);
+        ellipse(15 + x * 40, 15 + y * 40, 70, 70);
+      } else {
+        fill(100);
+        ellipse(15 + x * 40, 15 + y * 40, 30, 30);        
+      }
+      
+      y = y + 1;
+    }
+    x = x + 1;
+  }
+}
+
