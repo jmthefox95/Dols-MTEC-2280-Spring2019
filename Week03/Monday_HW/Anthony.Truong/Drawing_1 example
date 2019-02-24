@@ -1,0 +1,28 @@
+// Anthony.Truong week 3 first drawing in timer
+// Thanks to processing.org for giving us ideas for timecounter lesson today
+
+
+PFont words = createFont("HI EVERYBODY", 12);
+int s = second();
+
+
+void setup() {
+  size(500, 350);
+  frameRate(30);
+}
+
+void draw() {
+  background(#FFFFFF);
+  time();
+}
+
+void time() {
+  fill(#000000); 
+  textAlign(CENTER);
+  textFont(words, 50);
+  text(second(), 350, 175); 
+  text(":", 300, 175);
+  text(minute(), 250, 175);
+  text(":", 200, 175);
+  text(hour(), 150, 175);
+}
