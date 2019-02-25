@@ -1,0 +1,11 @@
+//Alejandro Suquisupa
+size(600,600);
+background(255);
+
+noStroke();
+fill(160,8,81);
+circle(300,300,500);
+fill(101,206,41);
+strokeWeight(2);
+stroke(0);
+triangle(150,400,200,500,450,400);
