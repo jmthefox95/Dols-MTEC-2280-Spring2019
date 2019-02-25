@@ -1,0 +1,50 @@
+//Alejandro Colmenares
+
+float r;
+float r1;
+float theta;
+float theta_vel;
+float theta_acc;
+
+void setup() {
+  size(800,850);
+  frameRate(60);
+  
+  r = height * 0.3;
+  r1 = height * 0.2;
+  theta = 0;
+  theta_vel = 0;
+  theta_acc = 0.0001;  
+}
+
+void draw() {
+  background(255,255,255);
+  
+  //ellipse(400,400,200,200);
+
+//ellipse(275,275,45,45);
+
+translate(width/2, height/2);
+
+float x = r * cos(theta);
+float y = r * sin(theta);
+
+ellipseMode(CENTER);
+noStroke();
+fill(0);
+ellipse(x,y,50,50);
+
+theta_vel += theta_acc;
+theta += .05;
+
+float x1 = r1 * cos (-theta);
+float y1 = r1 * sin(-theta);
+
+ellipseMode(CENTER);
+noStroke();
+fill(random(255));
+ellipse(x1,y1,50,50);
+
+theta_vel += theta_acc;
+theta += .02;
+}
