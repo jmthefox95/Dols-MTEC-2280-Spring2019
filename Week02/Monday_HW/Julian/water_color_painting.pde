@@ -4,7 +4,7 @@ float radius = 0;
 float colorVal= 255;
 float colorVal2= 255;
 float colorVal3= 255;
-int mousewtf= (mouseX+mouseY);
+int mousewtf;
 boolean fade = true;
 void setup(){
   size(600,600);
@@ -15,6 +15,9 @@ void setup(){
 void draw() {
   
   //background(255,255,255);
+  
+  //mousewtf= (mouseX+mouseY);
+  mousewtf= (255);
   
   radius = 2*(dist (100,100,mouseX,mouseY));
   colorVal = map(mouseX, 0, width, 0, 255);
