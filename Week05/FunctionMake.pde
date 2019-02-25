@@ -3,10 +3,10 @@ void setup() {
 
 void draw() {
   background(255);
-  drawCircle();
+  drawCircle();  // call on function in your draw loop
 }
 
-void drawCircle() {
+void drawCircle() {  //make function outside of your draw loop
   noFill();
   ellipse(50,50,20,20);
 }
