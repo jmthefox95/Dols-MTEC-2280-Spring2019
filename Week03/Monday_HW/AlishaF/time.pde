@@ -1,5 +1,4 @@
 //Alisha F
-
 float r;
 float b;
 
