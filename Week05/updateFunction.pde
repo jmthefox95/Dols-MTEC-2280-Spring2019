@@ -1,4 +1,5 @@
 float y = 250;
+float x = 250;
 int speed = 1;
 
 // Setup does not change

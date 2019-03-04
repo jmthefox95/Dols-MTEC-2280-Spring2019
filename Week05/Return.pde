@@ -7,12 +7,10 @@ void draw() {
   stroke(0);
 
   float b = difference(5, 2);
-  //fill(d*3, d*2, d);
-  //ellipseMode(CENTER);
-  //ellipse(width/2, height/2, 100, 100);
+  float c = difference(10, 4);
   
-  println(b);
-  
+  print(b);
+  println(c);
 }
 
 float difference(float x, float y) {
