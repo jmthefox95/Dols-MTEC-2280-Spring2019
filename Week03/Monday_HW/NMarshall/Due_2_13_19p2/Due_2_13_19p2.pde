@@ -2,6 +2,7 @@
 //Attempt at a Clock
 //It's not the best but at least it works
 //Inner hand counts seconds, outer counts 5
+//It's been updated to star at the top
 
 
 int counter = 0;
@@ -35,7 +36,7 @@ void draw() {
     savedTime = millis(); // Save the current time to restart the timer!
     }
   rotate(2*PI+(counter*PI)/60);
-  rect(0, 0, 100, 10);
+  rect(-5, 0, 10, -100);
  
   
   popMatrix();

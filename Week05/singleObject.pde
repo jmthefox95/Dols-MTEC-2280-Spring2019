@@ -1,7 +1,9 @@
+circle myBall; // ClassName ObjectName
+
 void setup() {
   size(480, 270);
   // Initialize Object 
-  myBall = new Ball();
+  myBall = new circle(); // Object is equal to Construct funtion
 }
 
 void draw() {
@@ -11,16 +13,18 @@ void draw() {
 }
 
 // Define a class outside of setup and draw.
-class Ball { 
+
+
+class circle { 
   // Variables.
-  color c; 
+  int c; 
   float xpos;
   float ypos;
   float speed;
 
   // Constructor.
-  Ball() { 
-    c = color(175);
+  circle() { 
+    c = 175;
     xpos = 0;
     ypos = height/2;
     speed = 1;

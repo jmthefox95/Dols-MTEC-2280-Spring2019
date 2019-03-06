@@ -21,56 +21,45 @@ void draw() {
 
   if (button) {
     background(255);
-    
+
     //stroke(50);
-    fill(255, 238, 58,100);
-    ellipse( 240,135, 50,50);
-    translate(0,10);
+    fill(255, 238, 58, 100);
+    ellipse( 240, 135, 50, 50);
+    translate(0, 10);
     //translate(10,-10);
     //fill(255);
     //stroke(0);
- //ellipse( 40,200, 50,50);
-} else {
-    background(0,0,0);
-    
+    //ellipse( 40,200, 50,50);
+  } else {
+    background(0, 0, 0);
+
     fill(255, 238, 58);
-    ellipse( 240,135, 50,50);
+    ellipse( 240, 135, 50, 50);
     fill(71, 229, 22);
     rect(x, y, w, h);
-    
     fill(255);
- ellipse( 40+m,200, 50,50);
-fill(255,0,0);
- ellipse( 30+m,200, 10,10);
- ellipse( 50+m,200, 10,10);
-
+    ellipse( 40+m, 200, 50, 50);
+    fill(255, 0, 0);
+    ellipse( 30+m, 200, 10, 10);
+    ellipse( 50+m, 200, 10, 10);
   }
 
   fill(175);
-  
- rect(x,y,w,50);
- //fill(0);
- 
- //fill(255);
- //ellipse( 40,200, 50,50);
- if(button==true)
- {
- m=m+10;
- println(m);
-}
 
-if (m>400)
-{
-  m=0;
-  button=!false;
-}
+  rect(x, y, w, 50);
+  //fill(0);
 
+  //fill(255);
+  //ellipse( 40,200, 50,50);
+  if (mousePressed && button==true)
+  {
+    m=m+10;
+    println(m);
+  }
 
-
-
-
-
-
-
-
+  if (m>400)
+  {
+    m=0;
+    button=!false;
+  }
 }
