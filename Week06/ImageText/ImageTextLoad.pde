@@ -13,8 +13,8 @@ void draw() {
   image(img, 0, 0);
   image(img, 0, 0, width, height);
 
-  //textFont(f, 16); // Step 4: Specify font to be used
-  fill(255);  // Step 5: Specify font color
+  //textFont(f, 16);
+  fill(255); 
   textSize(50);
   textAlign(CENTER, CENTER);
   text("SKY", width/2, height/2);
