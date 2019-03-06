@@ -1,8 +1,7 @@
 //NMarshall
 //I'm a bit lost when it comes to this topic
 //So, nothing impressive going on here
-//One of the objects work but the other one dosen't
-//I think I understand why (missing variables), I just don't have the time to fix it
+//But it at least works :) 
  
 circle myBall; // ClassName ObjectName
 circle myBall2; // ClassName ObjectName
