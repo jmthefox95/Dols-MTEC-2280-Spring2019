@@ -1,0 +1,48 @@
+//Alejandro Colmenares
+
+boolean button = false;
+
+int x = 130;
+int y = 250;
+int w = 150;
+int h = 80;
+
+void setup(){
+  size(400,520);
+}
+
+void draw(){
+  
+  if (mouseX > x && mouseX < x+w && mouseY > y && mouseY < y+h && mousePressed) {
+    button = !button;
+    delay(100);
+  }
+  
+if (button) {
+  background(255);
+  stroke(0);
+} else {
+  background(0);
+  stroke(255);
+}
+  
+ if (mouseX > x && mouseX < x+w && mouseY > y && mouseY < y+h) {
+  //fill(0,255,0);
+} else {
+  //fill(0,255,0);
+  stroke(255);
+  rect(x,y,w,h);
+}
+
+if (button) {
+  //fill(255);
+  ellipse(x,y,50,50);
+} else {
+  //fill(255,0,0);
+}
+
+if (mouseX <= x && mouseY >= y && mousePressed) {
+    button = !button;
+    delay(100);
+}
+}
