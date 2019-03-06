@@ -14,3 +14,7 @@ We will discuss specifics and requirements as we develop our individual projects
 **Schedule**
 
 March 4: Come to class with a idea or a few inspriations which you would like to work with.  Decide by now whether or not you will do a Game or a Story.
+
+March 11: Diagram/Storyboard your project.  If you are doing a game, plan the rules and conditions which should be met in order to earn points, move, defend etc.  If you are doing an interactive story: create a flowchart of how the story will evolve. Where does the main character begin?  What is the perspective?  What conflicts arise?  How does the story evolve?  How does it revolve?
+
+
