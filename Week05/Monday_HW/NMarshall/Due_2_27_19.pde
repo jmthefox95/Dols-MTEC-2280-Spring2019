@@ -1,10 +1,8 @@
-//FLASHING LIGHTS!!!!!
-
 
 //Naomi Marshall
-//Variation of Last Piece
-//I feel pretty sick making this tbh :(
-//I think I might be a bit sensitive to flashing lights but I can't get a framerate to work
+//Another Variation of a Previous Piece
+//Incoporated switch
+
 float r = 0;
 float g = 0;
 float b = 0;
