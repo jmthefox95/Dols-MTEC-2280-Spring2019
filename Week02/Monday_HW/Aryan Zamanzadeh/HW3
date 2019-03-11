@@ -39,9 +39,9 @@ if(mousePressed){
 }
 
 void mousePressed() {
-  loop();  // Holding down the mouse activates looping
+  loop(); 
 }
 
 void mouseReleased() {
-  noLoop();  // Releasing the mouse stops looping draw()
+  noLoop();  
 } 
