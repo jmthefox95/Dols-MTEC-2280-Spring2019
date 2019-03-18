@@ -1,4 +1,5 @@
 //Naomi Marshall
+//Maze game (Final version will hopefully be more complex, I just need it to work fully first before I add more)
 //Mostly good prototype just can't figure out how to pause
 //I'd hopefully make it so that when mouse pressed, the ellipse stays where it last was
 
