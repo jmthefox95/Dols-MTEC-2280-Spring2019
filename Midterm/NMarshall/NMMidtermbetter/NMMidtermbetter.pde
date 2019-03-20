@@ -1,6 +1,6 @@
 //Naomi Marshall
 //Maze game (Final version will hopefully be more complex, I just need it to work fully first before I add more)
-//Don't touch the walls and try to get to the ellipse in the center
+//Rules don't touch the walls too much and get to the ellipse in the center to win
 
 boolean button = false; //
 int counter = 225; //"Health bar"
