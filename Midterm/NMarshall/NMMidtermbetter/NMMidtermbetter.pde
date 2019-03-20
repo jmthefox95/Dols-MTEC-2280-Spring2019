@@ -1,5 +1,6 @@
 //Naomi Marshall
-//Maze game (Mostly done, I may add more (like make the health bar visible, then again, the health is kinda visible in the back so idk)
+//Maze game (Mostly done, I may add more )(like make the health bar visible,
+//then again, the health is kinda visible in the back so idk)
 //Rules: Don't touch the walls too much and get to the ellipse in the center to win
 
 boolean button = false; //
@@ -163,12 +164,6 @@ h = Inh;
   text("YOU WIN :D", width/2, height/2);
 }
   }
-  //Takes walls out (Currently not working)
-  // void nodisplay() { 
-  //  noStroke();
-  //  noFill(); 
-  //  rect(x, y, w, h);
-  //}
   
   //If touching walls health goes down, If depleted, game over
  void touchy(){
@@ -209,17 +204,6 @@ h = Inh;
    
     }
   }
-  
  }
-  //print(button);
-  //print(counter);
-   //if (button) {
-  //  background(255);
-  //  stroke(0);
-  //} else {
-  //  background(0);
-  //  stroke(255);
-  //}
  }
- 
  }
