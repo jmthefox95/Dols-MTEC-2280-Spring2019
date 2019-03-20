@@ -1,5 +1,5 @@
 //Naomi Marshall
-//Maze game (Final version will hopefully be more complex, I just need it to work fully first before I add more)
+//Maze game (Mostly done, I may add more (like make the health bar visible, then again, the health is kinda visible in the back so idk)
 //Rules: Don't touch the walls too much and get to the ellipse in the center to win
 
 boolean button = false; //
@@ -145,7 +145,7 @@ h = Inh;
   //Fuction shows walls
  void display() {
    if (win == false){
-    stroke(1);
+    noStroke();
     fill(175); 
     rect(x, y, w, h);
    } else if (win == true)
