@@ -2,6 +2,8 @@
 //Maze game (Mostly done, I may add more )(like make the health bar visible,
 //then again, the health is kinda visible in the back so idk)
 //Rules: Don't touch the walls too much and get to the ellipse in the center to win
+//Also, the walls disappear when you touch them, I'm unsure of exactly why this happens
+
 
 boolean button = false; //
 int counter = 225; //"Health bar"
@@ -9,7 +11,6 @@ int ell = 25;
 int oell = 20;
 float g = 200;
 float h = 190;
-int paused = 1;
 boolean win = false;
 
 maze wall1; // Maze wall
@@ -111,22 +112,6 @@ void draw() {
   text("YOU WIN :D", width/2, height/2);
     }
 }
-
-//Pause Ability (Not Completed)
-  void mousePressed() {
-  paused = paused+1; 
-  if (paused%2==0) { 
-
-  println ("Paused");
-  
-
-}
-  
- else   { println ("Unpaused");} 
-  }
-
-
-  
   
   class maze { 
   // Variables, determines wall x,y,width and height
