@@ -1,8 +1,7 @@
 //Naomi Marshall
-//Maze game (Mostly done, I may add more )(like make the health bar visible,
-//then again, the health is kinda visible in the back so idk)
+//Maze game 
+//It's basically done, but I may add a bit more, like I may make it harder)
 //Rules: Don't touch the walls too much and get to the ellipse in the center to win
-//Also, the walls disappear when you touch them, I'm unsure of exactly why this happens
 
 
 boolean button = false; //
@@ -40,7 +39,7 @@ wall4 = new maze(80, 250, 370, 50);
 wall5 = new maze(120, 340, 40, 160);
 wall6 = new maze(120, 160, 330, 10);
 wall7 = new maze(200, 300, 40, 160);
-wall8 = new maze(240, 420, 210, 40);
+wall8 = new maze(240, 420, 215, 40);
 wall9 = new maze(290, 340, 210, 40);
 wall10 = new maze(120, 200, 280, 10);
 wall11 = new maze(120, 170, 10, 40);
