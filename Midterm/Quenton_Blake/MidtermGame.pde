@@ -10,7 +10,7 @@ color colorR = color(255,255,0);
 
 int scoreL = 0;
 int scoreR = 0;
-int winScore = 2;
+int winScore = 10;
 
 void setup() {
   size(500,500);
