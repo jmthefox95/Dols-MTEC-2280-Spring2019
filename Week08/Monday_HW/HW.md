@@ -6,7 +6,7 @@ For next class (Wednesday, March 27th)
 
 * Bring in materials to prototype a unique switch in the next class.  The components for this switch should be conductive in order to close and open a circuit.
 
-* [Purchase an arduino kit](https://www.adafruit.com/product/170).  I suggest buying the kit from adafruit.  If you choose another kit, please send it to me for approval before you make your final purchase.  _Please order your kits so they will be available to you by Monday, April 1st_.
+* [Purchase an arduino kit](https://www.adafruit.com/product/170) or [This](https://www.amazon.com/SunFounder-Project-Universal-Starter-Beginner/dp/B00D9NRIGO/ref=sr_1_fkmrnull_1?keywords=sunfounder+universal+v2&qid=1553523480&s=gateway&sr=8-1-fkmrnull).  I suggest buying the kit from adafruit.  If you choose another kit, please send it to me for approval before you make your final purchase.  _Please order your kits so they will be available to you by Monday, April 1st_.
 
 Please review:
 
