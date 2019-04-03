@@ -9,7 +9,7 @@ Review Arduino examples in O1_Basics and 02_Digital.  If unsure of schematic set
 
 **Review....**
 
-[Pull-up Vs Pull-down Resistors](https://www.iot-experiments.com/pull-up-pull-down-resistor/)
-[PWM](https://www.arduino.cc/en/Tutorial/PWM)
-[Analog vs. Digital](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/)
-[Analog to Digital](https://learn.sparkfun.com/tutorials/analog-to-digital-conversion/all)
+* [Pull-up Vs Pull-down Resistors](https://www.iot-experiments.com/pull-up-pull-down-resistor/)
+* [PWM](https://www.arduino.cc/en/Tutorial/PWM)
+* [Analog vs. Digital](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/)
+* [Analog to Digital](https://learn.sparkfun.com/tutorials/analog-to-digital-conversion/all)
