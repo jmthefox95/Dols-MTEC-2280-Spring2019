@@ -8,6 +8,8 @@ Do Arduino examples in O2_Analog and review 02_Digital (skip sound/tone examples
 
 **Review....**
 
+* [Sensors](https://vimeo.com/102044250)
+* [Sensors2](https://vimeo.com/102042976)
 * [Pull-up Vs Pull-down Resistors](https://www.iot-experiments.com/pull-up-pull-down-resistor/)
 * [PWM](https://www.arduino.cc/en/Tutorial/PWM)
 * [Analog vs. Digital](https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/)
