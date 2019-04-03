@@ -1,6 +1,6 @@
 For next class (Wednesday, April 3rd)
 
-Review Arduino examples in O1_Basics and 02_Digital.  If unsure of schematic setup, try to google the example name and related images.  There is very good documentation online.
+Review Arduino examples in O1_Basics and 02_Digital (skip examples with tone/sound).  If unsure of schematic setup, try to google the example name and related images.  There is very good documentation online.
 
 
 **For help with your circuits.....**
