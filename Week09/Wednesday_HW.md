@@ -1,6 +1,6 @@
 For next class (Monday, April 8th)
 
-Do Arduino examples in O2_Analog and review 01_Digital (skip sound/tone examples).  
+Do Arduino examples in 03_Analog and review 02_Digital (skip sound/tone examples).  
 
 **For help with your circuits.....**
 
