@@ -41,7 +41,7 @@ void serialEvent(Serial myPort) {
       serialInArray[serialCount] = inByte;
       serialCount++;
 
-      // If we have 3 bytes:
+      // If we have 2 bytes:
       if (serialCount > 1 ) {
         empty = serialInArray[0];
         backgroundColor = serialInArray[1];
