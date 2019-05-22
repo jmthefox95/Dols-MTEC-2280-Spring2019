@@ -23,22 +23,11 @@ void loop()
 {
   sensorValue = analogRead(sensorPin) / 4; // map analog 0-1023 to 0-255
 
-  if (Serial.available() > 0) { // If data is available to read,
-    val = Serial.read(); // read it and store it in val
-
-    if (val == '1') //if we get a 1
-    {
-      ledState = !ledState; //flip the ledState
-      digitalWrite(ledPin, ledState);
-    }
-    delay(10);
-  }
-  else {
-    //Serial.println("Hello, world!"); //send back a hello world
-    Serial.write(0);  // you can write multiple sensors to processing
-    Serial.write(sensorValue); // send the value of one potentiometer
-    delay(50);
-  }
+  //Serial.println("Hello, world!"); //send back a hello world
+  Serial.write(0);  // you can write multiple sensors to processing
+  Serial.write(sensorValue); // send the value of one potentiometer
+  delay(50);
+  
 }
 
 void establishContact() {
