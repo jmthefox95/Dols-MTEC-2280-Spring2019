@@ -1,0 +1,46 @@
+import processing.serial.*;
+
+Serial myPort;  // Create object from Serial class
+int val;        // Data received from the serial port
+
+void setup() 
+{
+  size(200, 200);
+  
+ printArray(Serial.list());
+  String portName = Serial.list()[3];//change this to match you port in the console
+ myPort = new Serial(this, portName, 9600);
+}
+
+void draw() {
+  background(255);
+  
+  
+    if (keyCode==LEFT)
+
+  {
+    myPort.write('a');
+  }
+  
+  else if (keyCode==RIGHT)
+  {
+    myPort.write('d');
+  }
+  
+  else if (keyCode==UP)
+  {
+    myPort.write('w');
+  }
+  
+  //else if (keyCode==DOWN)
+  //{
+    //myPort.write('s');
+  //}
+  
+  else
+  {
+  myPort.write('e');
+  }
+  
+}
+
