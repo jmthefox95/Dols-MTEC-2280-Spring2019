@@ -1,0 +1,71 @@
+char val; // Data received from the serial port
+ int ledPin = 13; 
+#include<Servo.h>
+ Servo myservo;
+ 
+ void setup() {
+ pinMode(ledPin, OUTPUT); 
+ pinMode(10,OUTPUT);
+ pinMode(11,OUTPUT);
+ myservo.attach(A0);
+ myservo.attach(A1);
+ Serial.begin(9600); 
+ }
+ 
+ void loop() {
+ while (Serial.available())
+ { // If data is available to read,
+ val = Serial.read(); // read it and store it in val
+ }
+ //if (val == 'H') 
+ //{
+ //digitalWrite(ledPin, HIGH); //LED check for signal received 
+ 
+// }
+ if (val == 'w') 
+ {
+ digitalWrite(11, HIGH);
+ delay(15);
+ digitalWrite(11, LOW);
+ delay(1);
+ digitalWrite(10, HIGH);
+ delay(7);
+ digitalWrite(10, LOW);
+ delay(5);
+ 
+ //digitalWrite(11, LOW);
+ //digitalWrite(10, LOW);
+ //myservo.write(100);
+ digitalWrite(13, HIGH);
+ //delay(10);
+ }
+
+else if (val == 'a') 
+{
+ digitalWrite(10, HIGH);
+ delay(100);
+ }
+
+
+else if (val == 'd') 
+{
+  digitalWrite(11, HIGH);
+  delay(100);
+ }
+
+
+else(val == 'e'); 
+{
+ 
+digitalWrite(11, LOW);
+digitalWrite(10, LOW);
+digitalWrite(13, LOW);
+delay(10); 
+}
+ 
+
+
+
+ //delay(100); // Wait for next reading
+ }
+ 
