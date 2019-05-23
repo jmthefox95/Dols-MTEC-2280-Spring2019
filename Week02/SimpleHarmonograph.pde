@@ -16,7 +16,7 @@ void draw() {
   //ellipse(0,0,100,100);
   
   fill(0,0,0);
-  ellipse(harmX, harmY, 5, 5);
+  ellipse(harmX, harmY, 5, 5);  // change the x and y to have more interesting patterns.  Try adding a growth variable here
   
   harmX = 150*cos(harm);   
   harmY = 3*sin(harm2);
@@ -24,6 +24,6 @@ void draw() {
   harm = 0.10 + harm;
   harm2 = 0.001 + harm2;
   
-  phi = 0.02+ phi;
+  phi = 0.02+ phi; //play with this to change harmonic rate
   
 }

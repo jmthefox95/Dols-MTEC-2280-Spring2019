@@ -1,0 +1,20 @@
+//Anthony.Truong drawing 2 week 3 looping
+//Thanks to processing.org for giving us idea how to make a loop in our drawing
+// Circle Patterns
+
+
+
+void setup() {
+  size(400, 400);
+  colorMode(HSB);
+  noFill();
+  stroke(255, 100);
+}
+void draw() {
+  background(0);
+  float i = 0;
+  while(i < 70) {
+    ellipse(width/2 + i, height/2-i*frameCount*0.01, 100+i*5, 100-i*5);
+    i = i + 1;
+  }
+}
