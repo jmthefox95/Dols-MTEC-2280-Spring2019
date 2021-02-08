@@ -1,0 +1,75 @@
+//Maurice Burt
+
+
+int m;
+
+boolean moveboolean = true;
+float a;
+float moveRate = 30;
+float locationY = 400;
+float seconds = 0;
+float counterUp;
+float counterDown;
+
+
+void setup(){
+size (800, 800);
+frameRate (5);
+
+}
+
+void draw(){
+  background(25,75,120);
+  
+  m = millis();
+  seconds = m/1000;
+  
+  a = 255;
+  
+  fill(a, 0, 0);
+  stroke(0,0,255);
+  strokeWeight(4);
+  //timeColor = m % 5000;
+  
+ellipse(300,locationY,300,300);
+
+if (locationY >700){
+  moveboolean = false;
+  //fill(255,0,0);
+  println("down");
+  counterDown = counterDown + 1;
+  a = 180;
+  
+}
+
+if (locationY<0){
+moveboolean = true;
+//fill(0,255,0);
+println("up");
+counterUp = counterUp + 1;
+a = 15;
+
+
+}
+
+if(mousePressed){
+moveboolean = false;
+a = 0;
+}
+
+//if(mousePressed){
+//moveboolean = true;
+//}
+
+if(moveboolean ==false){
+moveRate = -20;
+}
+
+if(moveboolean == true){
+moveRate = 20;
+a = 18;
+}
+
+  locationY = locationY + moveRate;
+  println(counterUp,":",  counterDown);
+}

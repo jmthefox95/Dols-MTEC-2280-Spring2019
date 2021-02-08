@@ -1,0 +1,80 @@
+float r = 0;
+float g = 0;
+float b = 0;
+
+
+void setup() {
+  size(1000, 1000);
+}
+
+void draw() {
+
+  background(255); 
+//////////first circle/////////////////////////////////////
+  fill(r, g, b);
+  ellipse(100, 100, 200, 200);
+  noStroke();
+
+  float d =  dist(100, 100, mouseX, mouseY);
+ // println(d);
+
+  // OR Statement
+  if (d < 100 && mousePressed) {
+    r=0;
+    g=0;
+    b=255;
+  } else {
+    r=0;
+    g=0;
+    b=0;
+  }
+  
+  ///////////////////////////second circle/////////////////
+  
+    fill(r, g, b);
+  ellipse(500, 100, 200, 200);
+  noStroke();
+
+  float e =  dist(500, 500, mouseX, mouseY);
+ println(e);
+
+  // OR Statement
+  if (e < 100 || mousePressed) {
+    r=0;
+    g=150;
+    b=255;
+  } else {
+    r=0;
+    g=0;
+    b=0;
+  }
+  /////////////////////////////////////////////////////
+  
+  ///////////third circle////////////////////////
+  
+    
+    fill(r, g, b);
+  ellipse(500, 500, 200, 200);
+  noStroke();
+
+  float a =  dist(500, 500, mouseX, mouseY);
+ println(e);
+
+  // OR Statement
+  if (a > 100 && a < 200 ) {
+    r=0;
+    g=150;
+    b=255;
+  } else {
+    r=100;
+    g=25;
+    b=0;
+  }
+
+  // constraint 
+  if (r > 255) {
+    r = 255;
+  } else if (r < 0) {
+    r = 0;
+  }
+}

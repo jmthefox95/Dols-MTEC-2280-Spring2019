@@ -1,0 +1,337 @@
+Blast[]blasts = new Blast[1];
+float gravity  = -0.1;
+
+float r = 10;
+float characterX;
+float characterY = 1500;
+float characterXSpeed;
+//enemy1
+float enemyX = 100;
+float enemyY = 400;
+float enemySpeed;
+float hit;
+//enemy2
+float enemy2X = 800;
+float enemy2Y = 600;
+float enemySpeed1;
+float hit1;
+//enemy3
+float enemy3X = 200;
+float enemy3Y = 300;
+float enemySpeed2;
+float hit2;
+//enemy4
+float enemy4X = 300;
+float enemy4Y = 200;
+float enemySpeed3;
+float hit3;
+//enemy5
+float enemy5X = 200;
+float enemy5Y = 500;
+float enemySpeed4;
+float hit4;
+/////
+float blast =1500;
+float points;
+float suicide;
+
+
+
+
+boolean x1= false;   //left 
+boolean x2 = false;   //right
+
+boolean enemyX1 = false;  //right
+boolean enemyX2 = false;  //left 
+boolean enemyY1 = false;
+boolean enemyX3 = false;
+boolean enemyX4 = false;
+boolean enemyY2 = false;
+boolean enemyX5 = false;
+boolean enemyX6 = false;
+boolean enemyY3 = false;
+boolean enemyX7 = false;
+boolean enemyX8 = false;
+boolean enemyY4 = false;
+boolean enemyX9 = false;
+boolean enemyX10 = false;
+boolean enemyY5 = false;
+
+boolean fire = false;
+boolean characterLife = false;
+boolean characterDeath = false;
+boolean enemyLife = false;
+boolean enemyDeath = false;
+boolean enemyLife1 = false;
+boolean enemyDeath1 = false;
+boolean enemyLife2 = false;
+boolean enemyDeath2 = false;
+boolean enemyLife3 = false;
+boolean enemyDeath3 = false;
+boolean enemyLife4 = false;
+boolean enemyDeath4 = false;
+
+PImage image;
+PImage imageblast;
+PImage enemygif;
+PImage enemy1;
+PImage enemy2;
+PImage enemy3;
+
+
+void setup() {
+  size(2000, 1600);
+  blasts[0] = new Blast(50, 1500, 24);
+  image = loadImage("image.png");
+  imageblast = loadImage("imageblast.png");
+  enemygif = loadImage("enemy.gif");
+  enemy1 = loadImage("enemy1.gif");
+  enemy2 = loadImage("enemy2.png");
+  enemy3 = loadImage("enemy3.png");
+}
+
+
+void draw() {
+
+  background(1);
+  //ship
+  noStroke();
+  fill(255, 0, 0);
+  for (int i = 0; i <blasts.length; i++) {
+    blasts[i].move();
+    blasts[i].display();
+  }
+  ////////////////////////////////////////////////////////
+  //points//
+  textSize(50);
+ text(points, 100,100);
+ ///////////////////////
+  //character
+  image(image, characterX, characterY, 50, 50);
+
+  if (keyPressed) {
+    if (key  == 'a') {
+      x1 = true;
+      x2 = false;
+      if (x1 == true) {
+        characterXSpeed = -5;
+        delay(2);
+      }
+    }
+  } else {
+    characterXSpeed = 0;
+  }
+
+  if (keyPressed) {
+    if (key == 'd') {
+      x1 = false;
+      x2 = true;
+      if (x2== true) {
+        characterXSpeed = 5;
+        delay(2);
+      }
+    }
+  } else {
+    characterXSpeed = 0;
+  }
+
+  characterX = characterX + characterXSpeed;
+
+ 
+    //////////////////////////////////////////
+  ////background stars
+  noFill();
+  ellipseMode(CENTER);
+
+  // nested for loop
+  for (int x = 0; x <= 2000; x += 200+r) { 
+    for (int y = 0; y<=2000; y += 200+r) {
+
+      fill(random(200), random(75), random(170));
+
+      ellipse(x, y, 4, 4);
+    }
+  }
+///////////////////////////////////////////////////////////////////////
+  ////enemy1
+  
+  if(hit>40){
+    enemyLife = true;
+    enemyDeath = false;
+  }
+    if(enemyLife == true){
+  image(enemygif,enemyX, enemyY, 100, 100);
+  
+  if (enemyX < 110) {
+
+    enemyX1 = true;
+    enemyX2 = false;
+
+    if (enemyX1 == true) { 
+
+      enemySpeed = 8;
+      enemyY = enemyY+ 15;
+    }
+  }
+
+  if (enemyX >1400) {
+    enemyX1 = false;
+    enemyX2 = true;
+
+    if (enemyX2 == true) {
+      enemySpeed = -8;
+      enemyY = enemyY +15;
+      }
+    }
+    //if(enemyX < ){
+    
+    //}
+  }
+  enemyX = enemyX +enemySpeed;
+
+////////////////////////////////////////////////////////////////
+  //enemy2
+  fill(255, 0, 0, 150);
+  if(hit1>40){
+    enemyLife1 = true;
+    enemyDeath1 = false;
+  }
+    if(enemyLife1 == true){
+  image(enemy2, enemy2X, enemy2Y, 100, 100);
+  
+   if (enemy2X >1400) {
+    enemyX3 = false;
+    enemyX4 = true;
+
+    if (enemyX4 == true) {
+      enemySpeed1 = -9;
+      enemy2Y = enemy2Y +5;
+      }
+    }
+    
+  if (enemy2X > 160) {
+
+    enemyX3 = true;
+    enemyX4 = false;
+
+    if (enemyX3 == true) { 
+
+      enemySpeed1 = 9;
+      enemy2Y = enemy2Y + 5;
+    }
+  }
+  if(enemy2Y > 1600){
+  enemy2X = 165;
+  enemy2Y = 165;
+      }
+    }
+
+  enemy2X = enemy2X + enemySpeed1;
+
+///////////////////////////////////////////////////////
+//enemy3
+    fill(255, 0, 0, 150);
+  if(hit2>40){
+    enemyLife2 = true;
+    enemyDeath2 = false;
+  }
+    if(enemyLife2 == true){
+  image(enemy1, enemy3X, enemy3Y, 100, 100);
+    
+  if (enemy3X < 310) {
+
+    enemyX5 = true;
+    enemyX6 = false;
+
+    if (enemyX5 == true) { 
+      enemySpeed2 = 20;
+      enemy3Y = enemy3Y + 10;
+    }
+  }
+  if (enemy3X >1400) {
+    enemyX5 = false;
+    enemyX6 = true;
+
+    if (enemyX6 == true) {
+      enemySpeed2 = -20;
+      enemy3Y = enemy3Y +10;
+      }
+    }
+     enemy3X = enemy3X + enemySpeed2;
+  }
+ 
+///////////////////////////////////
+//enemy4
+
+  if(hit3>40){
+    enemyLife3 = true;
+    enemyDeath3 = false;
+  }
+    if(enemyLife3 == true){
+  image(enemygif,enemy4X, enemy4Y, 75, 75);
+  
+  if (enemy4X < 301) {
+
+    enemyX7 = true;
+    enemyX8 = false;
+
+    if (enemyX7 == true) { 
+
+      enemySpeed3 = 8;
+      enemy4Y = enemy4Y+ 12;
+    }
+  }
+
+  if (enemy4X >1400) {
+    enemyX7 = false;
+    enemyX8 = true;
+
+    if (enemyX8 == true) {
+      enemySpeed3 = -8;
+      enemy4Y = enemy4Y +12;
+      }
+    }
+  enemy4X = enemy4X +enemySpeed3;
+  }
+  //////////////////////////////////////////////////////////////
+  ///enemy5
+  
+   if(hit4>40){
+    enemyLife4 = true;
+    enemyDeath4 = false;
+  }
+    if(enemyLife4 == true){
+  image(enemy3,enemy5X, enemy5Y, 75, 75);
+  
+  if (enemy5X < 301) {
+
+    enemyX9 = true;
+    enemyX10 = false;
+
+    if (enemyX9 == true) { 
+
+      enemySpeed4 = 17;
+      enemy5Y = enemy5Y - 14;
+    }
+  }
+
+  if (enemy4X >1400) {
+    enemyX9 = false;
+    enemyX10 = true;
+
+    if (enemyX10 == true) {
+      enemySpeed4 = -20;
+      enemy5Y = enemy5Y +14;
+      }
+    }
+  enemy5X = enemy5X +enemySpeed4;
+  }
+  
+  
+}
+//////////////////////////////////////////
+void mousePressed(){
+
+  Blast b = new Blast(characterX+5, blast, 24);
+  blasts = (Blast[]) append(blasts, b);
+}
